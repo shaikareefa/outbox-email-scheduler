@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo">ONB</div>
+
+    <div class="profile">
+      <img src="https://i.pravatar.cc/40">
+      <div>
+        <strong>Oliver Brown</strong><br>
+        <small>oliver.brown@domain.io</small>
+      </div>
+    </div>
+
+    <!-- ✅ COMPOSE BUTTON -->
+    <button class="compose-btn" onclick="openCompose()">
+      Compose
+    </button>
+
+    <div class="menu">
+      <h4>CORE</h4>
+      <a href="dashboard.html" class="active">
+        Scheduled <span>12</span>
+      </a>
+      <a href="sent.html">
+        Sent <span>785</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <input class="search" placeholder="Search">
+
+    <div class="mail">
+      <div class="mail-left">
+        <strong>To: John Smith</strong>
+        <p>Meeting follow-up - Scheduled</p>
+      </div>
+      <div class="mail-right">
+        <span class="badge scheduled">Scheduled</span>
+        <span class="time">Tue 9:15 AM</span>
+      </div>
+    </div>
+
+    <div class="mail">
+      <div class="mail-left">
+        <strong>To: Olive</strong>
+        <p>Ramit, great to meet you – you'll love it</p>
+      </div>
+      <div class="mail-right">
+        <span class="badge scheduled">Scheduled</span>
+        <span class="time">Thu 8:15 PM</span>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<!-- ✅ SCRIPT -->
+<script>
+  function openCompose() {
+    window.location.href = "compose-v1.html";
+  }
+</script>
+
+</body>
+</html>
