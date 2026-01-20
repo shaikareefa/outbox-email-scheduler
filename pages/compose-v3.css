@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background: #f5f6f8;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.back {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.send-later {
+  border: 1px solid #1db954;
+  background: #e9f9ef;
+  color: #1db954;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* FORM */
+.form {
+  margin-top: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 150px 1fr auto;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 10px;
+}
+
+.row label {
+  color: #555;
+  font-size: 14px;
+}
+
+.row input,
+.row select {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  outline: none;
+}
+
+.inline {
+  grid-template-columns: 150px 1fr 1fr;
+}
+
+.inline div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TO FIELD */
+.to-field {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: #e9f9ef;
+  color: #1db954;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: 13px;
+}
+
+.chip.more {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.upload {
+  color: #1db954;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* EDITOR */
+.editor {
+  margin-top: 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  height: 300px;
+  position: relative;
+  background: #fafafa;
+}
+
+.editor-placeholder {
+  padding: 16px;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.toolbar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 14px;
+  padding: 10px 14px;
+  border-top: 1px solid #eee;
+  background: #fff;
+}
+
+.toolbar span {
+  cursor: pointer;
+  font-size: 14px;
+}

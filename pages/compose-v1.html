@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Compose New Email</title>
+  <link rel="stylesheet" href="compose-v1.css">
+</head>
+<body>
+
+<div class="compose-container">
+
+  <!-- HEADER -->
+  <header class="compose-header">
+    <div class="left">
+      <a href="dashboard.html" class="back">←</a>
+      <h2>Compose New Email</h2>
+    </div>
+
+    <div class="right">
+      <button class="icon-btn" onclick="toggleSchedule()">🕒</button>
+      <button class="send-btn">Send</button>
+    </div>
+  </header>
+
+  <!-- FORM -->
+  <div class="compose-form">
+
+    <div class="row">
+      <label>From</label>
+      <select>
+        <option>oliver.brown@domain.io</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>To</label>
+      <input type="email" placeholder="recipient@example.com">
+    </div>
+
+    <div class="row">
+      <label>Subject</label>
+      <input type="text" placeholder="Subject">
+    </div>
+
+    <div class="row inline">
+      <div>
+        <label>Delay between 2 emails</label>
+        <input type="number" value="00">
+      </div>
+
+      <div>
+        <label>Hourly Limit</label>
+        <input type="number" value="00">
+      </div>
+    </div>
+
+    <!-- EDITOR -->
+    <div class="editor">
+      <div class="editor-placeholder">Type your reply...</div>
+
+      <div class="toolbar">
+         <span>↶</span>
+        <span>↷</span>
+        <span>Tt</span>
+        <span><b>B</b></span>
+        <span><i>I</i></span>
+        <span><u>U</u></span>
+        <span>≡</span>
+        <span>1.</span>
+        <span>•</span>
+        <span>❝</span>
+        <span>🔗</span>
+        <span>S</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SEND LATER POPUP -->
+<div class="schedule-box" id="scheduleBox">
+  <h4>Send Later</h4>
+  <input type="datetime-local">
+
+  <ul>
+    <li>Tomorrow</li>
+    <li>Tomorrow, 10:00 AM</li>
+    <li>Tomorrow, 11:00 AM</li>
+    <li>Tomorrow, 3:00 PM</li>
+  </ul>
+
+  <div class="schedule-actions">
+    <button class="cancel" onclick="toggleSchedule()">Cancel</button>
+    <button class="done">Done</button>
+  </div>
+</div>
+
+<script>
+function toggleSchedule() {
+  document.getElementById("scheduleBox").classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
